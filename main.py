@@ -55,7 +55,7 @@ def read_file():
 
 def main():
     load_dotenv('apikey.env')
-    apikey = os.getenv('apikey')
+    apikey = os.getenv('APIKEY')
     сoffeeshops = load_coffee_shops('coffee.json')
     location = input('Где вы находитесь? ')
     coords_point = fetch_coordinates(apikey, location)
